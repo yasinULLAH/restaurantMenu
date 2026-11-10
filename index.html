@@ -1240,12 +1240,7 @@ function switchTab(tabName) {
   });
 
   document.querySelectorAll(".nav-tab-btn").forEach((btn) => {
-    const isMatch = btn.getAttribute("data-tab") === tabName;
-    if (isMatch) {
-      btn.className = "nav-tab-btn rn-press relative flex flex-col items-center justify-center py-1.5 rounded-2xl bg-emerald-900 text-white font-extrabold text-[11px]";
-    } else {
-      btn.className = "nav-tab-btn rn-press relative flex flex-col items-center justify-center py-1.5 rounded-2xl text-slate-500 font-bold text-[11px]";
-    }
+    btn.classList.toggle("is-active", btn.getAttribute("data-tab") === tabName);
   });
 
   renderWaiterAndWhatsAppViews();
@@ -1393,10 +1388,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!btn) return;
     AppState.selectedCategory = btn.getAttribute("data-category");
     document.querySelectorAll(".cat-pill").forEach((el) => {
-      const active = el.getAttribute("data-category") === AppState.selectedCategory;
-      el.className = active
-        ? "cat-pill rn-press shrink-0 px-3 py-1.5 rounded-xl text-xs font-extrabold bg-emerald-800 text-white shadow-2xs"
-        : "cat-pill rn-press shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200/80";
+      el.classList.toggle("is-active", el.getAttribute("data-category") === AppState.selectedCategory);
     });
     renderMenuCards();
   });
@@ -1406,10 +1398,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       AppState.sortBy = btn.getAttribute("data-sort");
       document.querySelectorAll(".sort-pill").forEach((el) => {
-        const active = el.getAttribute("data-sort") === AppState.sortBy;
-        el.className = active
-          ? "sort-pill px-2.5 py-1 rounded-lg bg-white text-slate-900 shadow-2xs transition"
-          : "sort-pill px-2.5 py-1 rounded-lg text-slate-600 transition";
+        el.classList.toggle("is-active", el.getAttribute("data-sort") === AppState.sortBy);
       });
       renderMenuCards();
     });
@@ -1458,10 +1447,7 @@ document.addEventListener("DOMContentLoaded", () => {
       searchInput.value = "";
       clearBtn.classList.add("hidden");
       document.querySelectorAll(".cat-pill").forEach((el) => {
-        const active = el.getAttribute("data-category") === "ALL";
-        el.className = active
-          ? "cat-pill rn-press shrink-0 px-3 py-1.5 rounded-xl text-xs font-extrabold bg-emerald-800 text-white shadow-2xs"
-          : "cat-pill rn-press shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200/80";
+        el.classList.toggle("is-active", el.getAttribute("data-category") === "ALL");
       });
       renderMenuCards();
     } else if (action === "go-menu") {
@@ -1493,6 +1479,39 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("waiter-add-more-btn").addEventListener("click", () => switchTab("menu"));
   document.getElementById("waiter-to-wa-btn").addEventListener("click", () => switchTab("whatsapp"));
   document.getElementById("wa-back-menu-btn").addEventListener("click", () => switchTab("menu"));
+
+  // Auto-hide bottom nav: slides away while scrolling down, returns on scroll up
+  const bottomNav = document.getElementById("bottom-nav");
+  const HIDE_AFTER = 72;
+  const SCROLL_DELTA = 4;
+  let lastScrollY = window.scrollY;
+  let scrollTicking = false;
+
+  function updateNavVisibility() {
+    const currentY = Math.max(0, window.scrollY);
+    const delta = currentY - lastScrollY;
+
+    if (Math.abs(delta) > SCROLL_DELTA) {
+      const navHidden = bottomNav.classList.contains("is-hidden");
+      const scrollingDown = delta > 0;
+
+      if (scrollingDown && currentY > HIDE_AFTER && !navHidden) {
+        bottomNav.classList.add("is-hidden");
+        document.body.classList.add("nav-hidden");
+      } else if (!scrollingDown && navHidden) {
+        bottomNav.classList.remove("is-hidden");
+        document.body.classList.remove("nav-hidden");
+      }
+      lastScrollY = currentY;
+    }
+    scrollTicking = false;
+  }
+
+  window.addEventListener("scroll", () => {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    window.requestAnimationFrame(updateNavVisibility);
+  }, { passive: true });
 
   // Table Picker Sheet
   const openTableSheet = () => {
@@ -1569,10 +1588,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!pill) return;
     AppState.orderMode = pill.getAttribute("data-mode");
     document.querySelectorAll(".mode-pill").forEach((el) => {
-      const active = el.getAttribute("data-mode") === AppState.orderMode;
-      el.className = active
-        ? "mode-pill rn-press py-2 px-2 rounded-xl text-[11px] font-extrabold bg-white text-emerald-900 shadow-2xs transition"
-        : "mode-pill rn-press py-2 px-2 rounded-xl text-[11px] font-bold text-slate-600 transition";
+      el.classList.toggle("is-active", el.getAttribute("data-mode") === AppState.orderMode);
     });
     const isDelivery = AppState.orderMode.includes("Delivery");
     document.getElementById("delivery-fields-box").classList.toggle("hidden", !isDelivery);
