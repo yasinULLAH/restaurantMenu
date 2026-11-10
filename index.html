@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Al-Madina Restaurant Bannu Township | Digital QR Menu &amp; WhatsApp Order</title>
+<meta name="description" content="Scan QR to view the official mobile menu of Al-Madina Restaurant, Main Market, Bannu Township, KPK. Show your selection to the waiter or order via WhatsApp 03361593533.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Yasin Ullah">
+<meta name="theme-color" content="#065f46">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Al-Madina Menu">
+<meta name="geo.region" content="PK-KP">
+<meta name="geo.placename" content="Bannu Township, Bannu, Khyber Pakhtunkhwa">
+<meta name="geo.position" content="32.9861;70.6425">
+<meta name="ICBM" content="32.9861, 70.6425">
+<link rel="canonical" href="https://almadinabannu.github.io/menu">
+<meta property="og:type" content="restaurant.menu">
+<meta property="og:title" content="Al-Madina Restaurant Bannu Township | QR Mobile Menu">
+<meta property="og:description" content="Authentic Bannu Beef Pulao, Painda, Mutton Dampukht, Charsi Karahi &amp; Chapli Kabab. Show order to waiter or send on WhatsApp 03361593533.">
+<meta property="og:url" content="https://almadinabannu.github.io/menu">
+<meta property="og:image" content="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Al-Madina Restaurant Bannu Township | QR Mobile Menu">
+<meta name="twitter:description" content="Order authentic Bannu Beef Pulao, Painda &amp; Shinwari Karahi on WhatsApp 03361593533.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&h=630&q=80">
+<link id="pwa-manifest-link" rel="manifest" href="">
+<link id="apple-touch-icon-link" rel="apple-touch-icon" href="">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.colVis.min.js"></script>
+<script src="https://unpkg.com/just-validate@4.3.0/dist/just-validate.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style id="dynamic-theme-vars">
+:root {
+  --font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-size-base: 15px;
+  --header-bg: #064e3b;
+  --header-text: #ffffff;
+  --sidebar-bg: #ffffff;
+  --sidebar-text: #0f172a;
+  --main-bg: #f1f5f9;
+  --main-text: #0f172a;
+  --footer-bg: #0f172a;
+  --footer-text: #f8fafc;
+}
+</style>
+
+<style>
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background-color: #020617;
+  color: var(--main-text);
+  margin: 0;
+  padding: 0;
+  overscroll-behavior-y: none;
+}
+.rn-shell {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.65);
+}
+.theme-header {
+  background-color: var(--header-bg) !important;
+  color: var(--header-text) !important;
+}
+.theme-nav {
+  background-color: var(--sidebar-bg) !important;
+  color: var(--sidebar-text) !important;
+}
+.theme-main {
+  background-color: var(--main-bg) !important;
+  color: var(--main-text) !important;
+}
+.theme-footer {
+  background-color: var(--footer-bg) !important;
+  color: var(--footer-text) !important;
+}
+.urdu-text {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  line-height: 2;
+}
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.nav-hidden-mobile {
+  transform: translateY(115%);
+}
+.rn-card {
+  transition: transform 0.14s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.14s ease;
+}
+.rn-card:active {
+  transform: scale(0.985);
+}
+.select2-container {
+  width: 100% !important;
+}
+.select2-container--default .select2-selection--single {
+  height: 46px !important;
+  border-radius: 0.85rem !important;
+  border: 1px solid #cbd5e1 !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 0.5rem !important;
+  background-color: #ffffff !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 44px !important;
+  right: 8px !important;
+}
+.select2-dropdown {
+  border-radius: 0.85rem !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18) !important;
+  overflow: hidden !important;
+}
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 0.75rem !important;
+  padding: 0.4rem 0.75rem !important;
+  min-height: 44px !important;
+  background: #ffffff !important;
+  width: 150px !important;
+}
+.dt-buttons {
+  display: inline-flex !important;
+  gap: 0.3rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.dt-button {
+  background: #f8fafc !important;
+  color: #334155 !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 0.6rem !important;
+  padding: 0.4rem 0.65rem !important;
+  min-height: 40px !important;
+  min-width: 40px !important;
+  font-size: 0.75rem !important;
+}
+table.dataTable thead th {
+  background: #f1f5f9 !important;
+  color: #1e293b !important;
+  font-weight: 700 !important;
+  font-size: 0.72rem !important;
+  text-transform: uppercase !important;
+  padding: 0.7rem 0.5rem !important;
+  resize: horizontal !important;
+  overflow: auto !important;
+}
+table.dataTable tbody tr:hover {
+  background-color: #ecfdf5 !important;
+}
+.just-validate-error-label {
+  font-size: 0.72rem !important;
+  color: #dc2626 !important;
+  margin-top: 0.2rem !important;
+  font-weight: 700 !important;
+}
+.waiter-bright-mode {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 4px solid #059669 !important;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-area, #printable-area * {
+    visibility: visible;
+  }
+  #printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 16px !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="rn-shell" id="app-shell">
+
+  <header class="theme-header sticky top-0 z-40 px-3.5 pt-3 pb-2.5 shadow-md rounded-b-3xl">
+    <div class="flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2.5 min-w-0" onclick="AppRouter.navigate('/menu')">
+        <div class="w-11 h-11 rounded-2xl bg-white/15 backdrop-blur-md flex items-center justify-center text-white border border-white/25 shrink-0 shadow-inner">
+          <i class="fa-solid fa-bowl-rice text-lg text-amber-300"></i>
+        </div>
+        <div class="min-w-0">
+          <div class="flex items-center gap-1.5">
+            <h1 class="font-extrabold text-sm sm:text-base tracking-tight truncate">AL-MADINA RESTAURANT</h1>
+            <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-extrabold bg-emerald-400/20 text-emerald-200 border border-emerald-300/30 shrink-0">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-ping"></span> OPEN
+            </span>
+          </div>
+          <p class="text-[11px] opacity-90 truncate flex items-center gap-1">
+            <i class="fa-solid fa-location-dot text-amber-300"></i>
+            <span>Main Market, Bannu Township, KPK</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-1.5 shrink-0">
+        <button type="button" id="pwa-install-btn" onclick="PWAModule.triggerInstall()" class="touch-target px-2.5 py-1.5 rounded-2xl bg-amber-400 hover:bg-amber-300 active:scale-95 text-slate-950 font-extrabold text-[11px] flex items-center gap-1 shadow-sm transition" title="Install App">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>App</span>
+        </button>
+
+        <button type="button" onclick="QRModule.openQRModal()" class="touch-target w-11 h-11 rounded-2xl bg-white/15 hover:bg-white/25 active:scale-95 text-white flex items-center justify-center border border-white/20 transition" aria-label="Show Table QR Code">
+          <i class="fa-solid fa-qrcode text-base"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="mt-2.5 pt-2 border-t border-white/15 flex items-center justify-between gap-2 text-[11px]">
+      <button type="button" onclick="WaiterModule.promptTableNumber()" class="px-2.5 py-1 rounded-xl bg-black/25 hover:bg-black/35 text-amber-200 font-bold flex items-center gap-1.5 active:scale-95 transition">
+        <i class="fa-solid fa-chair"></i>
+        <span id="active-table-badge">Select Table / Hujra</span>
+        <i class="fa-solid fa-pen text-[9px] opacity-75"></i>
+      </button>
+
+      <a href="https://wa.me/923361593533?text=Assalam-o-Alaikum%20Al-Madina%20Restaurant%20Bannu%20Township!" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-xl bg-emerald-500/30 hover:bg-emerald-500/40 text-white font-bold flex items-center gap-1 border border-emerald-300/30 active:scale-95 transition">
+        <i class="fa-brands fa-whatsapp text-emerald-300 text-xs"></i>
+        <span>0336-1593533</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="theme-main flex-1 px-3 pt-3 pb-28 space-y-4 overflow-x-hidden">
+
+    <section id="view-menu" class="route-view space-y-3.5 animate__animated animate__fadeIn animate__faster">
+
+      <div class="relative rounded-3xl overflow-hidden bg-slate-900 text-white shadow-lg border border-slate-800">
+        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=900&q=80" alt="Bannu Beef Pulao" class="absolute inset-0 w-full h-full object-cover opacity-40" onerror="ImageFallback.apply(this, 'Bannu Beef Pulao')">
+        <div class="relative z-10 p-4 bg-gradient-to-t from-slate-950 via-slate-950/75 to-transparent space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-400 text-slate-950 uppercase tracking-wide">
+              Bannu Township Special
+            </span>
+            <span class="urdu-text text-xs text-emerald-300 font-bold">الحمدللہ المدینہ ریسٹورنٹ بنوں ٹاؤن شپ</span>
+          </div>
+          <h2 class="text-lg font-extrabold leading-tight">
+            Authentic <span class="text-emerald-400">Bannu Beef Pulao, Painda &amp; Dampukht</span>
+          </h2>
+          <p class="text-[11px] text-slate-200 leading-relaxed">
+            Tap items below to build your order. Show your screen directly to the <strong>Waiter</strong> or tap <strong>WhatsApp Order</strong> for delivery!
+          </p>
+          <div class="pt-1 flex items-center gap-2">
+            <button type="button" onclick="MenuController.addDastarkhwanDeal()" class="touch-target flex-1 py-2 px-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-fire-flame-curved text-amber-300"></i>
+              <span>Add Family Dastarkhwan Deal (Rs. 3,450)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky top-[102px] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-2.5 shadow-sm border border-slate-200/90 space-y-2">
+        <div class="relative flex items-center">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 text-slate-400 text-xs"></i>
+          <input type="search" id="menu-search-input" placeholder="Search Pulao, Painda, Karahi, Rosh, Kabab, Qehwa..." class="w-full pl-9 pr-16 py-2.5 min-h-[44px] rounded-xl bg-slate-100 border border-transparent focus:bg-white focus:border-emerald-500 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 transition">
+          <button type="button" id="clear-search-btn" onclick="MenuController.clearSearch()" class="hidden absolute right-2 px-2.5 py-1 rounded-lg bg-slate-200 text-slate-700 text-[10px] font-extrabold">
+            Clear
+          </button>
+        </div>
+
+        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5" id="category-chips">
+          <button type="button" onclick="MenuController.setCategory('ALL')" data-cat="ALL" class="cat-chip touch-target shrink-0 px-3 py-1.5 rounded-xl text-xs font-extrabold bg-emerald-700 text-white shadow-xs transition active:scale-95">
+            All Menu (14)
+          </button>
+          <button type="button" onclick="MenuController.setCategory('Bannu Pulao & Painda')" data-cat="Bannu Pulao & Painda" class="cat-chip touch-target shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 transition active:scale-95">
+            🍚 Pulao &amp; Painda
+          </button>
+          <button type="button" onclick="MenuController.setCategory('Karahi, Rosh & Dampukht')" data-cat="Karahi, Rosh & Dampukht" class="cat-chip touch-target shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 transition active:scale-95">
+            🍲 Karahi &amp; Dampukht
+          </button>
+          <button type="button" onclick="MenuController.setCategory('BBQ & Chapli Kabab')" data-cat="BBQ & Chapli Kabab" class="cat-chip touch-target shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 transition active:scale-95">
+            🍢 Chapli &amp; BBQ
+          </button>
+          <button type="button" onclick="MenuController.setCategory('Tandoor, Qehwa & Sweet')" data-cat="Tandoor, Qehwa & Sweet" class="cat-chip touch-target shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 transition active:scale-95">
+            🫓 Naan, Qehwa &amp; Sweet
+          </button>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between px-1">
+        <span id="dishes-count-label" class="text-[11px] font-extrabold text-slate-500 uppercase tracking-wider">Authentic Bannu Dishes</span>
+        <div class="w-40">
+          <select id="menu-sort-select" class="text-xs">
+            <option value="popular">Most Popular</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="menu-cards-container" class="space-y-3"></div>
+
+    </section>
+
+    <section id="view-waiter" class="route-view hidden space-y-4 animate__animated animate__fadeIn animate__faster">
+      <div class="bg-emerald-900 text-white rounded-3xl p-4 shadow-lg space-y-2 border border-emerald-700">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-400 text-slate-950 uppercase">
+            Show This Screen to Waiter
+          </span>
+          <span class="urdu-text text-sm font-bold text-amber-300">یہ سکرین ویٹر کو دکھائیں</span>
+        </div>
+        <h2 class="text-base font-extrabold">Table / Hujra Waiter Order Pad</h2>
+        <p class="text-xs text-emerald-100">
+          Hand your phone or show this large-print order card to the Al-Madina waiter at your table.
+        </p>
+        <div class="pt-1 flex items-center gap-2">
+          <button type="button" onclick="WaiterModule.toggleHighContrast()" class="touch-target flex-1 py-2 px-3 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs flex items-center justify-center gap-1.5 border border-white/20">
+            <i class="fa-solid fa-sun text-amber-300"></i>
+            <span>Toggle Extra Bright Screen</span>
+          </button>
+          <button type="button" onclick="CartController.confirmClearCart()" class="touch-target py-2 px-3 rounded-xl bg-rose-500/30 hover:bg-rose-500/50 text-rose-100 font-bold text-xs flex items-center justify-center gap-1 border border-rose-400/30">
+            <i class="fa-solid fa-trash-can"></i>
+            <span>Reset</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="waiter-pad-card" class="bg-white rounded-3xl p-4 shadow-md border-2 border-emerald-600 space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+          <div>
+            <p class="text-[10px] font-extrabold uppercase tracking-wider text-slate-400">Dine-In Location</p>
+            <h3 id="waiter-table-heading" class="text-lg font-extrabold text-emerald-800">Table / Hujra #1</h3>
+          </div>
+          <div class="w-44">
+            <select id="waiter-table-select" onchange="WaiterModule.setTable(this.value)">
+              <option value="Table #1 (Main Hall)">Table #1 (Main Hall)</option>
+              <option value="Table #2 (Main Hall)">Table #2 (Main Hall)</option>
+              <option value="Table #3 (Main Hall)">Table #3 (Main Hall)</option>
+              <option value="Table #4 (Main Hall)">Table #4 (Main Hall)</option>
+              <option value="Table #5 (Main Hall)">Table #5 (Main Hall)</option>
+              <option value="Family Cabin #1 (Parda)">Family Cabin #1 (Parda)</option>
+              <option value="Family Cabin #2 (Parda)">Family Cabin #2 (Parda)</option>
+              <option value="Hujra Charpai Dastarkhwan #1">Hujra Dastarkhwan #1</option>
+              <option value="Hujra Charpai Dastarkhwan #2">Hujra Dastarkhwan #2</option>
+              <option value="Self Takeaway Counter">Self Takeaway Counter</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="waiter-items-list" class="space-y-3 divide-y divide-slate-100"></div>
+
+        <div class="pt-3 border-t-2 border-dashed border-slate-200 space-y-2">
+          <label for="waiter-quick-note" class="block text-xs font-extrabold text-slate-700">Special Instructions for Waiter / Kitchen:</label>
+          <div class="flex flex-wrap gap-1.5">
+            <button type="button" onclick="WaiterModule.appendTag('Kam Namak / Less Salt')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-emerald-50 text-slate-700 font-bold text-[11px] border border-slate-200">+ Kam Namak</button>
+            <button type="button" onclick="WaiterModule.appendTag('Garam Tandoori Naan')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-emerald-50 text-slate-700 font-bold text-[11px] border border-slate-200">+ Garam Naan</button>
+            <button type="button" onclick="WaiterModule.appendTag('Nalli / Bone Marrow Piece')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-emerald-50 text-slate-700 font-bold text-[11px] border border-slate-200">+ Nalli Piece</button>
+            <button type="button" onclick="WaiterModule.appendTag('Extra Podina Raita & Salad')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-emerald-50 text-slate-700 font-bold text-[11px] border border-slate-200">+ Extra Raita</button>
+          </div>
+          <input type="text" id="waiter-quick-note" placeholder="Tap tags above or type note for waiter..." class="w-full px-3.5 py-2.5 min-h-[44px] rounded-xl border border-slate-300 text-xs font-semibold">
+        </div>
+
+        <div class="bg-slate-900 text-white rounded-2xl p-4 flex items-center justify-between">
+          <div>
+            <p class="text-[11px] text-slate-300 font-medium">Estimated Table Total</p>
+            <p id="waiter-grand-total" class="text-2xl font-extrabold text-emerald-400">Rs. 0</p>
+          </div>
+          <div class="text-right">
+            <span id="waiter-total-count" class="px-3 py-1 rounded-full bg-emerald-500 text-slate-950 font-extrabold text-xs">0 Dishes</span>
+            <p class="urdu-text text-xs text-amber-300 mt-1">بل کی تفصیل</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 pt-1">
+          <button type="button" onclick="WaiterModule.markShownToWaiter()" class="touch-target py-3 px-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-md">
+            <i class="fa-solid fa-check-double"></i>
+            <span>Log Table Order</span>
+          </button>
+          <button type="button" onclick="AppRouter.navigate('/whatsapp')" class="touch-target py-3 px-3 rounded-2xl bg-slate-900 hover:bg-slate-800 active:scale-95 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-md">
+            <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+            <span>Order on WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-whatsapp" class="route-view hidden space-y-4 animate__animated animate__fadeIn animate__faster">
+      <div class="bg-white rounded-3xl p-4 shadow-sm border border-slate-200 space-y-3">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+          <div class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <h2 class="text-sm font-extrabold text-slate-900">WhatsApp Order Checkout</h2>
+              <p class="text-[11px] text-slate-500">Direct Al-Madina Bannu Line: <strong>0336-1593533</strong></p>
+            </div>
+          </div>
+          <button type="button" onclick="AppRouter.navigate('/menu')" class="touch-target px-3 py-1.5 rounded-xl bg-slate-100 text-slate-700 font-extrabold text-xs">
+            + Add Items
+          </button>
+        </div>
+
+        <div id="wa-cart-summary" class="space-y-2.5 divide-y divide-slate-100"></div>
+      </div>
+
+      <form id="whatsappOrderForm" class="bg-white rounded-3xl p-4 shadow-sm border border-slate-200 space-y-3.5" novalidate>
+        <h3 class="text-xs font-extrabold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+          <i class="fa-solid fa-motorcycle text-emerald-600"></i>
+          Delivery / Table Details
+        </h3>
+
+        <div>
+          <label for="wa-order-mode" class="block text-xs font-bold text-slate-700 mb-1">Order Mode *</label>
+          <select id="wa-order-mode" onchange="CartController.refreshUI()">
+            <option value="Home Delivery (Bannu Township)">Home Delivery (Bannu Township &amp; City)</option>
+            <option value="Dine-In Table Order (Via WhatsApp)">Dine-In Table Order (Send to Counter)</option>
+            <option value="Self Pickup / Takeaway">Self Pickup / Takeaway</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="wa-cust-name" class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+            <input type="text" id="wa-cust-name" required placeholder="e.g. Haji Tariq Khan Wazir" class="w-full px-3.5 py-2.5 min-h-[44px] rounded-xl border border-slate-300 text-xs font-semibold">
+          </div>
+          <div>
+            <label for="wa-cust-phone" class="block text-xs font-bold text-slate-700 mb-1">Mobile Number *</label>
+            <input type="tel" id="wa-cust-phone" required placeholder="03361593533" class="w-full px-3.5 py-2.5 min-h-[44px] rounded-xl border border-slate-300 text-xs font-semibold">
+          </div>
+        </div>
+
+        <div>
+          <label for="wa-zone-select" class="block text-xs font-bold text-slate-700 mb-1">Bannu Township Sector / Area *</label>
+          <select id="wa-zone-select" onchange="CartController.refreshUI()">
+            <option value="Phase 1 - Bannu Township|50">Phase 1 - Bannu Township (Rs. 50)</option>
+            <option value="Phase 2 - Bannu Township|70">Phase 2 - Bannu Township (Rs. 70)</option>
+            <option value="Phase 3 - Bannu Township|80">Phase 3 - Bannu Township (Rs. 80)</option>
+            <option value="KGN Teaching Hospital Township|50">KGN Teaching Hospital Township (Rs. 50)</option>
+            <option value="UST / UET Bannu Township Hostels|60">UST / UET Bannu Hostels (Rs. 60)</option>
+            <option value="Bannu Medical College (BMC)|60">Bannu Medical College BMC (Rs. 60)</option>
+            <option value="Mandan / Bannu City Chowk|150">Mandan / Bannu City (Rs. 150)</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label for="wa-address" class="block text-xs font-bold text-slate-700">Complete Address / Hostel / Table No *</label>
+            <button type="button" onclick="CartController.attachGPS(this)" class="text-[11px] font-extrabold text-emerald-600 flex items-center gap-1">
+              <i class="fa-solid fa-location-crosshairs"></i> Attach Live GPS
+            </button>
+          </div>
+          <textarea id="wa-address" rows="2" required placeholder="e.g. Street 4, House 18, Phase 1, Bannu Township (or Table #3)" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-xs font-semibold"></textarea>
+        </div>
+
+        <details class="bg-slate-50 rounded-2xl p-3 border border-slate-200">
+          <summary class="cursor-pointer text-xs font-extrabold text-slate-700 flex items-center justify-between list-none">
+            <span><i class="fa-solid fa-sliders text-emerald-600 mr-1"></i> Spice Level, Payment &amp; Promo Code</span>
+            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+          </summary>
+          <div class="pt-3 mt-2 border-t border-slate-200 space-y-2.5">
+            <div>
+              <label for="wa-spice-select" class="block text-[11px] font-bold text-slate-600 mb-1">Cooking &amp; Spice Preference</label>
+              <select id="wa-spice-select">
+                <option value="Traditional Namkeen (Black Pepper & Rock Salt)">Traditional Namkeen (Black Pepper &amp; Salt)</option>
+                <option value="Medium Bannu Green Chili Masala">Medium Bannu Green Chili Masala</option>
+                <option value="Full Spicy & Chatpata">Full Spicy &amp; Chatpata</option>
+                <option value="Less Fat / Less Oil">Less Fat / Less Oil</option>
+              </select>
+            </div>
+            <div>
+              <label for="wa-payment-select" class="block text-[11px] font-bold text-slate-600 mb-1">Payment Method</label>
+              <select id="wa-payment-select">
+                <option value="Cash on Delivery / Pay at Table">Cash on Delivery / Pay at Table</option>
+                <option value="Easypaisa / JazzCash (0336-1593533)">Easypaisa / JazzCash (0336-1593533)</option>
+              </select>
+            </div>
+          </div>
+        </details>
+
+        <div class="bg-slate-900 text-white rounded-2xl p-3.5 space-y-1.5 text-xs">
+          <div class="flex justify-between text-slate-300">
+            <span>Dishes Subtotal:</span>
+            <span id="wa-sub-amount" class="font-bold text-white">Rs. 0</span>
+          </div>
+          <div class="flex justify-between text-slate-300">
+            <span>Delivery Charges:</span>
+            <span id="wa-del-amount" class="font-bold text-white">Rs. 50</span>
+          </div>
+          <div class="flex justify-between text-sm font-extrabold text-emerald-400 pt-1.5 border-t border-slate-700">
+            <span>Total Bill (PKR):</span>
+            <span id="wa-total-amount">Rs. 0</span>
+          </div>
+        </div>
+
+        <button type="submit" id="wa-send-btn" class="w-full touch-target py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg transition">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Send Order on WhatsApp (0336-1593533)</span>
+        </button>
+
+        <button type="button" onclick="CartController.openPrintableSlip()" class="w-full touch-target py-2.5 px-4 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-receipt text-emerald-700"></i>
+          <span>Preview / Print Order Slip</span>
+        </button>
+      </form>
+    </section>
+
+    <section id="view-rates" class="route-view hidden space-y-4 animate__animated animate__fadeIn animate__faster">
+      <div class="bg-white rounded-3xl p-4 shadow-sm border border-slate-200 space-y-3">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-sm font-extrabold text-slate-900 flex items-center gap-1.5">
+              <i class="fa-solid fa-table-list text-emerald-600"></i>
+              Full Al-Madina Bannu Rate List
+            </h2>
+            <p class="text-[11px] text-slate-500">Searchable tabular rate card with PDF / Print / Excel export</p>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table id="rate-list-datatable" class="display responsive nowrap w-full text-xs">
+            <thead>
+              <tr>
+                <th>Dish</th>
+                <th>Single/Half</th>
+                <th>Full/1KG</th>
+                <th>Category</th>
+                <th>Add</th>
+              </tr>
+            </thead>
+            <tbody id="rate-list-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-4 shadow-sm border border-slate-200 space-y-3">
+        <h3 class="text-sm font-extrabold text-slate-900 flex items-center gap-1.5">
+          <i class="fa-solid fa-clock-rotate-left text-emerald-600"></i>
+          Recent Bannu Township Orders Log
+        </h3>
+        <div class="overflow-x-auto">
+          <table id="recent-orders-datatable" class="display responsive nowrap w-full text-xs">
+            <thead>
+              <tr>
+                <th>Order #</th>
+                <th>Table / Sector</th>
+                <th>Dishes</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="recent-orders-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-settings" class="route-view hidden space-y-4 animate__animated animate__fadeIn animate__faster">
+      <div class="bg-white rounded-3xl p-4 shadow-sm border border-slate-200 space-y-3">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+          <div>
+            <h2 class="text-sm font-extrabold text-slate-900 flex items-center gap-1.5">
+              <i class="fa-solid fa-qrcode text-emerald-600"></i>
+              GitHub Pages Table QR Code Generator
+            </h2>
+            <p class="text-[11px] text-slate-500">Print or save this QR code for restaurant tables so customers can scan &amp; order</p>
+          </div>
+          <button type="button" onclick="QRModule.printQRStandee()" class="touch-target px-3 py-1.5 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center gap-1">
+            <i class="fa-solid fa-print"></i> Print Card
+          </button>
+        </div>
+
+        <div class="space-y-2.5">
+          <div>
+            <label for="qr-custom-url" class="block text-xs font-bold text-slate-700 mb-1">Menu App URL (GitHub Pages Link)</label>
+            <input type="url" id="qr-custom-url" oninput="QRModule.renderQR()" class="w-full px-3 py-2 min-h-[44px] rounded-xl border border-slate-300 text-xs font-mono">
+          </div>
+          <div>
+            <label for="qr-table-tag" class="block text-xs font-bold text-slate-700 mb-1">Assign Table / Hujra Number to QR</label>
+            <select id="qr-table-tag" onchange="QRModule.renderQR()">
+              <option value="">General Menu QR (All Tables)</option>
+              <option value="Table #1 (Main Hall)">Table #1 (Main Hall)</option>
+              <option value="Table #2 (Main Hall)">Table #2 (Main Hall)</option>
+              <option value="Table #3 (Main Hall)">Table #3 (Main Hall)</option>
+              <option value="Table #4 (Main Hall)">Table #4 (Main Hall)</option>
+              <option value="Family Cabin #1 (Parda)">Family Cabin #1 (Parda)</option>
+              <option value="Hujra Charpai Dastarkhwan #1">Hujra Dastarkhwan #1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-4 border-2 border-dashed border-emerald-600 text-center space-y-2">
+          <p class="text-[10px] font-extrabold uppercase tracking-widest text-emerald-700">SCAN FOR DIGITAL MENU &amp; WAITER ORDER</p>
+          <h4 class="font-extrabold text-sm text-slate-900">AL-MADINA RESTAURANT BANNU TOWNSHIP</h4>
+          <div id="inline-qrcode-box" class="flex justify-center py-2"></div>
+          <p id="qr-caption-label" class="text-xs font-bold text-slate-700">WhatsApp Order: 0336-1593533</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-4 shadow-sm border border-slate-200 space-y-3">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+          <div>
+            <h3 class="text-sm font-extrabold text-slate-900 flex items-center gap-1.5">
+              <i class="fa-solid fa-palette text-emerald-600"></i>
+              Mobile App UI Theme Customizer
+            </h3>
+            <p class="text-[11px] text-slate-500">Customize fonts, text size, and colors</p>
+          </div>
+          <button type="button" onclick="ThemeController.reset()" class="touch-target px-3 py-1.5 rounded-xl bg-slate-100 text-slate-700 font-bold text-xs">
+            Reset
+          </button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2">
+          <button type="button" onclick="ThemeController.applyPreset('emerald')" class="py-2 px-2 rounded-xl bg-emerald-800 text-white font-bold text-[11px] text-center">KPK Emerald</button>
+          <button type="button" onclick="ThemeController.applyPreset('tandoori')" class="py-2 px-2 rounded-xl bg-amber-900 text-amber-100 font-bold text-[11px] text-center">Warm Tandoor</button>
+          <button type="button" onclick="ThemeController.applyPreset('midnight')" class="py-2 px-2 rounded-xl bg-slate-900 text-slate-100 font-bold text-[11px] text-center">Royal Slate</button>
+        </div>
+
+        <form id="themeForm" class="space-y-3" onsubmit="ThemeController.saveFromForm(event)">
+          <div class="grid grid-cols-2 gap-2.5">
+            <div>
+              <label for="ui-font-family" class="block text-[11px] font-bold text-slate-700 mb-1">Font Family</label>
+              <select id="ui-font-family">
+                <option value="'Plus Jakarta Sans', sans-serif">Plus Jakarta (Native)</option>
+                <option value="'Inter', sans-serif">Inter UI</option>
+                <option value="Georgia, serif">Classic Serif</option>
+              </select>
+            </div>
+            <div>
+              <label for="ui-font-size" class="block text-[11px] font-bold text-slate-700 mb-1">Font Size</label>
+              <select id="ui-font-size">
+                <option value="14px">Compact (14px)</option>
+                <option value="15px">Standard (15px)</option>
+                <option value="16px">Large Easy-Read (16px)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-4 gap-2">
+            <div>
+              <label for="ui-header-bg" class="block text-[10px] font-bold text-slate-600 mb-1">Header BG</label>
+              <input type="color" id="ui-header-bg" value="#064e3b" class="w-full h-10 rounded-lg cursor-pointer border border-slate-300">
+            </div>
+            <div>
+              <label for="ui-header-text" class="block text-[10px] font-bold text-slate-600 mb-1">Header Text</label>
+              <input type="color" id="ui-header-text" value="#ffffff" class="w-full h-10 rounded-lg cursor-pointer border border-slate-300">
+            </div>
+            <div>
+              <label for="ui-main-bg" class="block text-[10px] font-bold text-slate-600 mb-1">App BG</label>
+              <input type="color" id="ui-main-bg" value="#f1f5f9" class="w-full h-10 rounded-lg cursor-pointer border border-slate-300">
+            </div>
+            <div>
+              <label for="ui-nav-bg" class="block text-[10px] font-bold text-slate-600 mb-1">Tab Bar BG</label>
+              <input type="color" id="ui-nav-bg" value="#ffffff" class="w-full h-10 rounded-lg cursor-pointer border border-slate-300">
+            </div>
+          </div>
+
+          <button type="submit" class="w-full touch-target py-2.5 rounded-2xl bg-emerald-600 text-white font-extrabold text-xs shadow-sm">
+            Save Theme Preferences
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="theme-footer rounded-3xl p-4 text-center space-y-2 shadow-inner">
+      <p class="font-extrabold text-xs text-emerald-400">Al-Madina Restaurant — Main Market, Bannu Township, KPK</p>
+      <p class="text-[11px] opacity-80">Fresh Bannu Beef Pulao, Painda, Dampukht &amp; Shinwari • WhatsApp: 03361593533</p>
+      <div class="pt-2 border-t border-white/10 flex flex-wrap items-center justify-center gap-2 text-[11px]">
+        <span>Created by: <a href="https://www.linkedin.com/in/yasin-ullah-029229232/" target="_blank" rel="noopener noreferrer" class="text-amber-300 font-extrabold underline">Yasin Ullah</a></span>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/yasin-ullah-029229232/" target="_blank" rel="noopener noreferrer" class="text-sky-300 font-bold hover:underline">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <span>•</span>
+        <a href="https://wa.me/923361593533" target="_blank" rel="noopener noreferrer" class="text-emerald-300 font-bold hover:underline">
+          <i class="fa-brands fa-whatsapp"></i> 03361593533
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <div id="floating-action-pill" class="hidden fixed bottom-[76px] left-1/2 -translate-x-1/2 w-[94%] max-w-[450px] z-30">
+    <div class="bg-slate-950/95 backdrop-blur-md text-white rounded-2xl p-2.5 shadow-2xl border border-emerald-500/50 flex items-center justify-between gap-2 animate__animated animate__slideInUp animate__faster">
+      <div class="flex items-center gap-2.5 pl-1">
+        <div id="float-badge-count" class="w-10 h-10 rounded-xl bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0">0</div>
+        <div>
+          <p class="text-[10px] text-slate-300 font-semibold uppercase tracking-wider">Selected Order</p>
+          <p id="float-badge-total" class="text-sm font-extrabold text-amber-300">Rs. 0</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <button type="button" onclick="AppRouter.navigate('/waiter')" class="touch-target px-3 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 active:scale-95 text-slate-950 font-extrabold text-xs flex items-center gap-1 shadow-sm">
+          <i class="fa-solid fa-user-tie"></i>
+          <span>Show Waiter</span>
+        </button>
+        <button type="button" onclick="AppRouter.navigate('/whatsapp')" class="touch-target px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-extrabold text-xs flex items-center gap-1 shadow-sm">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav id="bottom-tab-bar" class="theme-nav fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-40 border-t border-slate-200/90 shadow-[0_-8px_25px_rgba(15,23,42,0.1)] rounded-t-3xl px-2 py-1.5 transition-transform duration-300">
+    <div class="grid grid-cols-5 gap-1">
+      <button type="button" data-route="/menu" onclick="AppRouter.navigate('/menu')" class="tab-btn touch-target flex flex-col items-center justify-center py-1 rounded-2xl text-[11px] font-extrabold transition active:scale-90">
+        <i class="fa-solid fa-utensils text-base mb-0.5"></i>
+        <span>Menu</span>
+      </button>
+
+      <button type="button" data-route="/waiter" onclick="AppRouter.navigate('/waiter')" class="tab-btn touch-target relative flex flex-col items-center justify-center py-1 rounded-2xl text-[11px] font-extrabold transition active:scale-90">
+        <i class="fa-solid fa-hand-holding-Precious text-base mb-0.5 fa-bell-concierge"></i>
+        <span>Waiter Card</span>
+        <span id="tab-waiter-badge" class="hidden absolute top-0.5 right-2.5 px-1.5 py-0.2 rounded-full text-[9px] font-extrabold bg-amber-500 text-slate-950">0</span>
+      </button>
+
+      <button type="button" data-route="/whatsapp" onclick="AppRouter.navigate('/whatsapp')" class="tab-btn touch-target relative flex flex-col items-center justify-center py-1 rounded-2xl text-[11px] font-extrabold transition active:scale-90">
+        <i class="fa-brands fa-whatsapp text-lg mb-0.5"></i>
+        <span>WhatsApp</span>
+        <span id="tab-wa-badge" class="hidden absolute top-0.5 right-2.5 px-1.5 py-0.2 rounded-full text-[9px] font-extrabold bg-emerald-600 text-white">0</span>
+      </button>
+
+      <button type="button" data-route="/rates" onclick="AppRouter.navigate('/rates')" class="tab-btn touch-target flex flex-col items-center justify-center py-1 rounded-2xl text-[11px] font-extrabold transition active:scale-90">
+        <i class="fa-solid fa-table-list text-base mb-0.5"></i>
+        <span>Rate List</span>
+      </button>
+
+      <button type="button" data-route="/settings" onclick="AppRouter.navigate('/settings')" class="tab-btn touch-target flex flex-col items-center justify-center py-1 rounded-2xl text-[11px] font-extrabold transition active:scale-90">
+        <i class="fa-solid fa-qrcode text-base mb-0.5"></i>
+        <span>QR &amp; App</span>
+      </button>
+    </div>
+  </nav>
+
+</div>
+
+<div id="print-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-xs flex items-center justify-center p-3">
+  <div class="bg-white rounded-3xl max-w-sm w-full p-4 shadow-2xl space-y-3 animate__animated animate__zoomIn animate__faster">
+    <div class="flex items-center justify-between no-print border-b border-slate-100 pb-2">
+      <h3 class="font-extrabold text-sm text-slate-900">Official Al-Madina Voucher</h3>
+      <div class="flex items-center gap-1.5">
+        <button type="button" onclick="window.print()" class="touch-target px-3 py-1.5 rounded-xl bg-emerald-600 text-white font-bold text-xs">
+          <i class="fa-solid fa-print mr-1"></i> Print
+        </button>
+        <button type="button" onclick="document.getElementById('print-modal').classList.add('hidden')" class="touch-target w-9 h-9 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <div id="printable-area" class="font-mono text-xs text-slate-900 border border-dashed border-slate-400 rounded-2xl p-3.5 space-y-2.5 bg-white">
+      <div class="text-center border-b border-dashed border-slate-300 pb-2">
+        <h4 class="font-extrabold text-sm">AL-MADINA RESTAURANT</h4>
+        <p class="text-[10px]">Main Commercial Market, Bannu Township, KPK</p>
+        <p class="text-[10px] font-bold">WhatsApp / Call: 0336-1593533</p>
+      </div>
+      <div id="printable-body" class="space-y-2"></div>
+      <div class="border-t border-dashed border-slate-300 pt-2 text-center text-[9px] space-y-0.5">
+        <p class="font-bold">Created by: Yasin Ullah | WhatsApp: 03361593533</p>
+        <p>Linkedin: https://www.linkedin.com/in/yasin-ullah-029229232/</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const APP_CONFIG = {
+  restaurantName: "Al-Madina Restaurant Bannu Township",
+  location: "Main Commercial Market, Phase 1, Bannu Township, KPK",
+  whatsappLocal: "03361593533",
+  whatsappIntl: "923361593533",
+  currency: "PKR",
+  timezone: "Asia/Karachi",
+  storageKeys: {
+    cart: "almadina_qr_cart_v2",
+    orders: "almadina_qr_orders_v2",
+    table: "almadina_qr_table_v2",
+    theme: "almadina_qr_theme_v2"
+  }
+};
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 2500,
+  timerProgressBar: true
+});
+
+const Utils = {
+  escape(str) {
+    if (str === null || str === undefined) return "";
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+};
+
+const ImageFallback = {
+  apply(imgEl, dishName) {
+    imgEl.onerror = null;
+    const canvas = document.createElement("canvas");
+    canvas.width = 600;
+    canvas.height = 400;
+    const ctx = canvas.getContext("2d");
+    const grad = ctx.createLinearGradient(0, 0, 600, 400);
+    grad.addColorStop(0, "#064e3b");
+    grad.addColorStop(1, "#0f172a");
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, 600, 400);
+    ctx.fillStyle = "#34d399";
+    ctx.font = "bold 20px sans-serif";
+    ctx.fillText("AL-MADINA RESTAURANT BANNU", 36, 90);
+    ctx.fillStyle = "#ffffff";
+    ctx.font = "bold 28px sans-serif";
+    ctx.fillText(String(dishName || "Bannu Special").slice(0, 28), 36, 155);
+    ctx.fillStyle = "#fbbf24";
+    ctx.font = "bold 18px sans-serif";
+    ctx.fillText("Fresh Halal KPK Cuisine • 0336-1593533", 36, 215);
+    imgEl.src = canvas.toDataURL("image/jpeg", 0.85);
+  }
+};
+
+const BANNU_MENU_DATA = [
+  {
+    id: "ALM-01",
+    name: "Special Bannu Beef Pulao (Bong & Nalli)",
+    urduName: "سپیشل بنوں بیف پلاؤ (بونگ اور نلی)",
+    category: "Bannu Pulao & Painda",
+    singleLabel: "Single Plate",
+    singlePrice: 650,
+    fullLabel: "Full / 1 KG",
+    fullPrice: 1250,
+    prepTime: "10 mins",
+    popular: true,
+    spicyTag: "Traditional Yakhni & Black Pepper",
+    desc: "Iconic Bannu beef shank (bong) & marrow bone (nalli) pulao cooked in rich bone broth, whole garam masala, and roasted black pepper. Served with raita & salad.",
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-02",
+    name: "Traditional Bannu Painda (Desi Chicken Sobat)",
+    urduName: "بنوں کا روایتی پیندہ (دیسی مرغ صحبت)",
+    category: "Bannu Pulao & Painda",
+    singleLabel: "Half Thal (2 Persons)",
+    singlePrice: 1150,
+    fullLabel: "Full Thal (4–5 Persons)",
+    fullPrice: 2200,
+    prepTime: "20 mins",
+    popular: true,
+    spicyTag: "Authentic Bannu & Marwat Specialty",
+    desc: "Rich spicy desi murgh shorba poured over hand-crushed thin pathiri/mana flatbread with pure desi ghee, green chilies, lemon, and onion salad.",
+    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-03",
+    name: "Al-Madina Mutton Dampukht (Lambe Fat)",
+    urduName: "المدینہ مٹن دم پخت (لمبے)",
+    category: "Karahi, Rosh & Dampukht",
+    singleLabel: "Half KG Handi",
+    singlePrice: 1650,
+    fullLabel: "Full 1 KG Handi",
+    fullPrice: 3200,
+    prepTime: "25 mins",
+    popular: true,
+    spicyTag: "Slow-Steamed Namkeen",
+    desc: "Tender KPK lamb slow-steamed in its own tail fat (lambe) inside a dough-sealed handi with whole potatoes, garlic pods, green chilies, and rock salt.",
+    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-04",
+    name: "Shinwari Charsi Lamb Karahi (Desi Ghee)",
+    urduName: "شنواری چرسی مٹن کڑاہی",
+    category: "Karahi, Rosh & Dampukht",
+    singleLabel: "Half KG Karahi",
+    singlePrice: 1550,
+    fullLabel: "Full 1 KG Karahi",
+    fullPrice: 2950,
+    prepTime: "20 mins",
+    popular: true,
+    spicyTag: "Fresh Wok Seared",
+    desc: "Freshly slaughtered tender lamb seared on high flame with organic Bannu tomatoes, green chilies, black pepper, and pure sheep fat or desi ghee.",
+    image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-05",
+    name: "Waziristani Namkeen Mutton Rosh",
+    urduName: "وزیرستانی نمکین مٹن روش",
+    category: "Karahi, Rosh & Dampukht",
+    singleLabel: "Single Serving",
+    singlePrice: 950,
+    fullLabel: "Double Serving",
+    fullPrice: 1800,
+    prepTime: "15 mins",
+    popular: true,
+    spicyTag: "With Golden Yakhni Soup",
+    desc: "Melt-in-the-mouth slow-simmered meat with whole potato, onion, black pepper, and rich clear golden bone marrow broth.",
+    image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-06",
+    name: "Shinwari Koyla Chicken Karahi",
+    urduName: "شنواری کوئلہ چکن کڑاہی",
+    category: "Karahi, Rosh & Dampukht",
+    singleLabel: "Half Chicken",
+    singlePrice: 950,
+    fullLabel: "Full Chicken",
+    fullPrice: 1800,
+    prepTime: "18 mins",
+    popular: true,
+    spicyTag: "Charcoal Smoked",
+    desc: "Fresh chicken karahi cooked in ripe tomato gravy, ginger juliennes, green chilies, and finished with live charcoal smoke.",
+    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-07",
+    name: "Peshawari Special Egg Chapli Kabab",
+    urduName: "پشاوری سپیشل انڈہ چپلی کباب",
+    category: "BBQ & Chapli Kabab",
+    singleLabel: "2 Large Kababs",
+    singlePrice: 420,
+    fullLabel: "4 Family Kababs",
+    fullPrice: 800,
+    prepTime: "12 mins",
+    popular: true,
+    spicyTag: "Tawa Fried in Tail Fat",
+    desc: "Crispy minced beef kababs blended with crushed coriander, pomegranate seeds (anardana), green onions, tomato slice, and farm egg.",
+    image: "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-08",
+    name: "Namkeen Lamb Tikka & Malai Boti Platter",
+    urduName: "نمکین مٹن تکہ اور ملائی بوٹی پلیٹر",
+    category: "BBQ & Chapli Kabab",
+    singleLabel: "Half Platter (6 Skewers)",
+    singlePrice: 1200,
+    fullLabel: "Full Platter (12 Skewers)",
+    fullPrice: 2300,
+    prepTime: "18 mins",
+    popular: true,
+    spicyTag: "Live Charcoal Grill",
+    desc: "Juicy charcoal-grilled namkeen lamb tikka pieces paired with creamy chicken malai boti, seekh kababs, mint chutney, and hot naan.",
+    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-09",
+    name: "Peshawari Beef Seekh Kabab (Do-ri Kabab)",
+    urduName: "پشاوری بیف سیخ کباب",
+    category: "BBQ & Chapli Kabab",
+    singleLabel: "Half Dozen (6 Pcs)",
+    singlePrice: 650,
+    fullLabel: "Full Dozen (12 Pcs)",
+    fullPrice: 1250,
+    prepTime: "15 mins",
+    popular: false,
+    spicyTag: "Juicy Charcoal Skewers",
+    desc: "Tender hand-minced beef seekh kababs grilled over glowing charcoal embers, served with tamarind & green mint chutney.",
+    image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-10",
+    name: "Kandahari & Roghani Tandoori Naan",
+    urduName: "قندھاری اور روغنی تندوری نان",
+    category: "Tandoor, Qehwa & Sweet",
+    singleLabel: "Single Naan",
+    singlePrice: 70,
+    fullLabel: "Double Roghani Naan",
+    fullPrice: 130,
+    prepTime: "5 mins",
+    popular: true,
+    spicyTag: "Clay Oven Fresh",
+    desc: "Piping hot clay-oven baked Peshawari naan brushed with butter and sprinkled with sesame & kalonji seeds.",
+    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-11",
+    name: "Peshawari Sulemani Qehwa (With Bannu Gur)",
+    urduName: "پشاوری سلیمانی قہوہ (بنوں گڑ کے ساتھ)",
+    category: "Tandoor, Qehwa & Sweet",
+    singleLabel: "2 Cups Kettle",
+    singlePrice: 120,
+    fullLabel: "Family Kettle (5 Cups)",
+    fullPrice: 240,
+    prepTime: "5 mins",
+    popular: true,
+    spicyTag: "Digestive Cardamom Tea",
+    desc: "Traditional aromatic green tea brewed with crushed green cardamom and served with organic nutty Bannu jaggery (gur).",
+    image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-12",
+    name: "Bannu Desi Ghee Sooji Halwa & Matka Kheer",
+    urduName: "دیسی گھی حلوہ اور مٹکا کھیر",
+    category: "Tandoor, Qehwa & Sweet",
+    singleLabel: "Single Matka Bowl",
+    singlePrice: 280,
+    fullLabel: "Family Platter",
+    fullPrice: 520,
+    prepTime: "5 mins",
+    popular: false,
+    spicyTag: "Topped with Almonds & Pistachio",
+    desc: "Rich slow-reduced milk matka kheer and warm desi ghee halwa garnished with roasted almonds, raisins, and pistachios.",
+    image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-13",
+    name: "Village Podina Namkeen Lassi (Chati Lassi)",
+    urduName: "پودینہ نمکین چاٹی لسی",
+    category: "Tandoor, Qehwa & Sweet",
+    singleLabel: "Tall Glass",
+    singlePrice: 160,
+    fullLabel: "Full Chilled Jug",
+    fullPrice: 480,
+    prepTime: "5 mins",
+    popular: false,
+    spicyTag: "Roasted Cumin & Mint",
+    desc: "Chilled thick village yogurt whipped with crushed fresh mint leaves, roasted zeera, and black salt.",
+    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ALM-14",
+    name: "Fresh Kachumar Salad & Zeera Mint Raita",
+    urduName: "تازہ کچومر سلاد اور زیرہ رائتہ",
+    category: "Tandoor, Qehwa & Sweet",
+    singleLabel: "Regular Bowl",
+    singlePrice: 100,
+    fullLabel: "Large Dastarkhwan Bowl",
+    fullPrice: 180,
+    prepTime: "3 mins",
+    popular: false,
+    spicyTag: "Fresh Bannu Farm Veggies",
+    desc: "Crisp diced cucumbers, tomatoes, red onions, lemon, and green chilies served alongside thick mint-zeera yogurt raita.",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80"
+  }
+];
+
+const SEEDED_ORDERS = [
+  {
+    orderId: "ALM-901",
+    location: "Table #3 (Main Hall)",
+    items: "2x Special Bannu Beef Pulao (Full), 1x Peshawari Egg Chapli Kabab, 1x Sulemani Qehwa",
+    total: 3040
+  },
+  {
+    orderId: "ALM-902",
+    location: "Hujra Dastarkhwan #1",
+    items: "1x Traditional Bannu Painda (Full), 1x Shinwari Lamb Karahi (Half), 4x Roghani Naan",
+    total: 4030
+  },
+  {
+    orderId: "ALM-903",
+    location: "Phase 1 - Bannu Township",
+    items: "1x Al-Madina Mutton Dampukht (Full), 6x Kandahari Naan, 1x Full Jug Lassi",
+    total: 4100
+  },
+  {
+    orderId: "ALM-904",
+    location: "KGN Teaching Hospital Township",
+    items: "2x Waziristani Namkeen Rosh, 2x Single Beef Pulao, 4x Single Naan",
+    total: 3480
+  }
+];
+
+const Store = {
+  init() {
+    if (!localStorage.getItem(APP_CONFIG.storageKeys.orders)) {
+      localStorage.setItem(APP_CONFIG.storageKeys.orders, JSON.stringify(SEEDED_ORDERS));
+    }
+    if (!localStorage.getItem(APP_CONFIG.storageKeys.cart)) {
+      localStorage.setItem(APP_CONFIG.storageKeys.cart, JSON.stringify([]));
+    }
+    const urlParams = new URLSearchParams(window.location.search);
+    const tableFromQr = urlParams.get("table");
+    if (tableFromQr) {
+      localStorage.setItem(APP_CONFIG.storageKeys.table, tableFromQr);
+    } else if (!localStorage.getItem(APP_CONFIG.storageKeys.table)) {
+      localStorage.setItem(APP_CONFIG.storageKeys.table, "Table #1 (Main Hall)");
+    }
+  },
+  getCart() {
+    try {
+      return JSON.parse(localStorage.getItem(APP_CONFIG.storageKeys.cart)) || [];
+    } catch (e) {
+      return [];
+    }
+  },
+  saveCart(c) {
+    localStorage.setItem(APP_CONFIG.storageKeys.cart, JSON.stringify(c));
+  },
+  getOrders() {
+    try {
+      return JSON.parse(localStorage.getItem(APP_CONFIG.storageKeys.orders)) || SEEDED_ORDERS;
+    } catch (e) {
+      return SEEDED_ORDERS;
+    }
+  },
+  saveOrders(o) {
+    localStorage.setItem(APP_CONFIG.storageKeys.orders, JSON.stringify(o));
+  },
+  getTable() {
+    return localStorage.getItem(APP_CONFIG.storageKeys.table) || "Table #1 (Main Hall)";
+  },
+  saveTable(t) {
+    localStorage.setItem(APP_CONFIG.storageKeys.table, t);
+  }
+};
+
+const MenuController = {
+  activeCategory: "ALL",
+  searchQuery: "",
+  sortBy: "popular",
+  selectedPortions: {},
+
+  init() {
+    BANNU_MENU_DATA.forEach((d) => {
+      this.selectedPortions[d.id] = "Single";
+    });
+
+    const sInput = document.getElementById("menu-search-input");
+    sInput.addEventListener("input", (e) => {
+      this.searchQuery = e.target.value.trim();
+      document.getElementById("clear-search-btn").classList.toggle("hidden", !this.searchQuery);
+      this.renderCards();
+    });
+
+    $("#menu-sort-select").on("change", (e) => {
+      this.sortBy = e.target.value;
+      this.renderCards();
+    });
+
+    this.renderCards();
+  },
+
+  setCategory(cat) {
+    this.activeCategory = cat;
+    document.querySelectorAll(".cat-chip").forEach((btn) => {
+      const isMatch = btn.getAttribute("data-cat") === cat;
+      btn.className = isMatch
+        ? "cat-chip touch-target shrink-0 px-3 py-1.5 rounded-xl text-xs font-extrabold bg-emerald-700 text-white shadow-xs transition active:scale-95"
+        : "cat-chip touch-target shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 transition active:scale-95";
+    });
+    this.renderCards();
+  },
+
+  clearSearch() {
+    this.searchQuery = "";
+    document.getElementById("menu-search-input").value = "";
+    document.getElementById("clear-search-btn").classList.add("hidden");
+    this.renderCards();
+  },
+
+  selectPortion(dishId, portionType) {
+    this.selectedPortions[dishId] = portionType;
+    this.renderCards();
+  },
+
+  getFiltered() {
+    let list = [...BANNU_MENU_DATA];
+    if (this.activeCategory !== "ALL") {
+      list = list.filter((d) => d.category === this.activeCategory);
+    }
+    if (this.searchQuery) {
+      const q = this.searchQuery.toLowerCase();
+      list = list.filter((d) =>
+        d.name.toLowerCase().includes(q) ||
+        d.desc.toLowerCase().includes(q) ||
+        d.category.toLowerCase().includes(q) ||
+        d.urduName.includes(q)
+      );
+    }
+    if (this.sortBy === "price-asc") {
+      list.sort((a, b) => a.singlePrice - b.singlePrice);
+    } else if (this.sortBy === "price-desc") {
+      list.sort((a, b) => b.singlePrice - a.singlePrice);
+    } else {
+      list.sort((a, b) => Number(b.popular) - Number(a.popular));
+    }
+    return list;
+  },
+
+  renderCards() {
+    const container = document.getElementById("menu-cards-container");
+    const list = this.getFiltered();
+    const cart = Store.getCart();
+    document.getElementById("dishes-count-label").textContent = `${list.length} Dishes Available`;
+
+    if (list.length === 0) {
+      container.innerHTML = `
+        <div class="bg-white rounded-3xl p-8 text-center border border-slate-200 space-y-2">
+          <i class="fa-solid fa-bowl-food text-3xl text-slate-300"></i>
+          <p class="font-extrabold text-sm text-slate-800">No dish matched "${Utils.escape(this.searchQuery)}"</p>
+          <button type="button" onclick="MenuController.clearSearch(); MenuController.setCategory('ALL');" class="touch-target px-4 py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs">Reset Filters</button>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = list.map((d) => {
+      const chosenPortion = this.selectedPortions[d.id] || "Single";
+      const activePrice = chosenPortion === "Full" ? d.fullPrice : d.singlePrice;
+      const cartKey = `${d.id}_${chosenPortion}`;
+      const existingItem = cart.find((c) => c.cartKey === cartKey);
+      const currentQty = existingItem ? existingItem.qty : 0;
+
+      return `
+        <article class="rn-card bg-white rounded-3xl overflow-hidden shadow-xs border border-slate-200/90">
+          <div class="flex gap-3 p-3">
+            <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden bg-slate-900 shrink-0 border border-slate-100">
+              <img src="${Utils.escape(d.image)}" alt="${Utils.escape(d.name)}" loading="lazy" onerror="ImageFallback.apply(this, '${Utils.escape(d.name)}')" class="w-full h-full object-cover">
+              ${d.popular ? `<span class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-lg text-[9px] font-extrabold bg-amber-400 text-slate-950 shadow-xs">★ TOP</span>` : ""}
+              <span class="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded-md bg-black/75 text-white text-[9px] font-bold">${Utils.escape(d.prepTime)}</span>
+            </div>
+
+            <div class="flex-1 min-w-0 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-1">
+                  <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 leading-snug">${Utils.escape(d.name)}</h3>
+                </div>
+                <p class="urdu-text text-xs font-bold text-emerald-700 mt-0.5">${Utils.escape(d.urduName)}</p>
+                <p class="text-[11px] text-slate-500 line-clamp-2 mt-1 leading-relaxed">${Utils.escape(d.desc)}</p>
+              </div>
+              <div class="mt-1.5">
+                <span class="inline-block px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-800 font-bold text-[10px]">
+                  ${Utils.escape(d.spicyTag)}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-3 pb-3 pt-1 space-y-2">
+            <div class="grid grid-cols-2 gap-1.5 bg-slate-100 p-1 rounded-2xl">
+              <button type="button" onclick="MenuController.selectPortion('${d.id}', 'Single')" class="py-1.5 px-2 rounded-xl text-left transition ${chosenPortion === 'Single' ? 'bg-white shadow-xs border border-emerald-500/40' : 'opacity-75'}">
+                <div class="text-[10px] font-bold text-slate-500">${Utils.escape(d.singleLabel)}</div>
+                <div class="text-xs font-extrabold text-slate-900">Rs. ${d.singlePrice.toLocaleString()}</div>
+              </button>
+              <button type="button" onclick="MenuController.selectPortion('${d.id}', 'Full')" class="py-1.5 px-2 rounded-xl text-left transition ${chosenPortion === 'Full' ? 'bg-white shadow-xs border border-emerald-500/40' : 'opacity-75'}">
+                <div class="text-[10px] font-bold text-slate-500">${Utils.escape(d.fullLabel)}</div>
+                <div class="text-xs font-extrabold text-emerald-700">Rs. ${d.fullPrice.toLocaleString()}</div>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between gap-2 pt-0.5">
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase">Selected Price</span>
+                <p class="text-sm font-extrabold text-slate-950">Rs. ${activePrice.toLocaleString()}</p>
+              </div>
+
+              ${currentQty === 0 ? `
+                <div class="flex items-center gap-1.5">
+                  <button type="button" onclick="CartController.quickWhatsAppSingle('${d.id}', '${chosenPortion}')" class="touch-target px-3 py-2 rounded-2xl bg-emerald-50 hover:bg-emerald-100 active:scale-95 text-emerald-700 font-extrabold text-xs flex items-center gap-1 border border-emerald-200" title="Order directly on WhatsApp">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>1-Tap</span>
+                  </button>
+                  <button type="button" onclick="CartController.addItem('${d.id}', '${chosenPortion}', 1)" class="touch-target px-4 py-2 rounded-2xl bg-emerald-700 hover:bg-emerald-600 active:scale-95 text-white font-extrabold text-xs flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Select Dish</span>
+                  </button>
+                </div>
+              ` : `
+                <div class="flex items-center gap-2 bg-emerald-50 border border-emerald-300 rounded-2xl p-1">
+                  <button type="button" onclick="CartController.changeQty('${cartKey}', -1)" class="touch-target w-9 h-9 rounded-xl bg-white text-slate-900 font-extrabold text-sm shadow-2xs active:scale-90">-</button>
+                  <span class="px-2 font-extrabold text-xs text-emerald-950">${currentQty} in Order</span>
+                  <button type="button" onclick="CartController.changeQty('${cartKey}', 1)" class="touch-target w-9 h-9 rounded-xl bg-emerald-700 text-white font-extrabold text-sm shadow-2xs active:scale-90">+</button>
+                </div>
+              `}
+            </div>
+          </div>
+        </article>
+      `;
+    }).join("");
+  },
+
+  addDastarkhwanDeal() {
+    CartController.addItem("ALM-01", "Full", 1, true);
+    CartController.addItem("ALM-04", "Single", 1, true);
+    CartController.addItem("ALM-07", "Single", 1, true);
+    CartController.addItem("ALM-10", "Full", 2, true);
+    Toast.fire({ icon: "success", title: "Family Dastarkhwan Deal added!" });
+    AppRouter.navigate("/waiter");
+  }
+};
+
+const CartController = {
+  addItem(dishId, portion = "Single", qty = 1, silent = false) {
+    const dish = BANNU_MENU_DATA.find((d) => d.id === dishId);
+    if (!dish) return;
+    const unitPrice = portion === "Full" ? dish.fullPrice : dish.singlePrice;
+    const portionLabel = portion === "Full" ? dish.fullLabel : dish.singleLabel;
+    const cartKey = `${dishId}_${portion}`;
+    const cart = Store.getCart();
+    const existing = cart.find((c) => c.cartKey === cartKey);
+
+    if (existing) {
+      existing.qty += qty;
+    } else {
+      cart.push({
+        cartKey,
+        dishId: dish.id,
+        name: dish.name,
+        urduName: dish.urduName,
+        portion,
+        portionLabel,
+        unitPrice,
+        qty,
+        image: dish.image
+      });
+    }
+    Store.saveCart(cart);
+    this.refreshUI();
+    MenuController.renderCards();
+    if (!silent) {
+      Toast.fire({ icon: "success", title: `${dish.name} (${portionLabel}) selected` });
+    }
+  },
+
+  changeQty(cartKey, delta) {
+    const cart = Store.getCart();
+    const idx = cart.findIndex((c) => c.cartKey === cartKey);
+    if (idx === -1) return;
+    cart[idx].qty += delta;
+    if (cart[idx].qty <= 0) {
+      cart.splice(idx, 1);
+    }
+    Store.saveCart(cart);
+    this.refreshUI();
+    MenuController.renderCards();
+  },
+
+  confirmClearCart() {
+    const cart = Store.getCart();
+    if (cart.length === 0) {
+      Toast.fire({ icon: "info", title: "No items selected yet" });
+      return;
+    }
+    Swal.fire({
+      title: "Clear Selected Items?",
+      text: "This will clear all dishes from your Waiter Card & WhatsApp tray.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#dc2626",
+      confirmButtonText: "Yes, Reset"
+    }).then((res) => {
+      if (res.isConfirmed) {
+        Store.saveCart([]);
+        this.refreshUI();
+        MenuController.renderCards();
+        Toast.fire({ icon: "success", title: "Selection cleared" });
+      }
+    });
+  },
+
+  getTotals() {
+    const cart = Store.getCart();
+    const totalQty = cart.reduce((s, i) => s + i.qty, 0);
+    const subtotal = cart.reduce((s, i) => s + i.unitPrice * i.qty, 0);
+    const modeEl = document.getElementById("wa-order-mode");
+    const mode = modeEl ? modeEl.value : "Home Delivery (Bannu Township)";
+    const zoneRaw = document.getElementById("wa-zone-select")
+      ? document.getElementById("wa-zone-select").value
+      : "Phase 1 - Bannu Township|50";
+    const [zoneName, feeStr] = zoneRaw.split("|");
+    const deliveryFee = subtotal > 0 && mode.includes("Home Delivery") ? Number(feeStr || 50) : 0;
+    const grandTotal = subtotal + deliveryFee;
+    return { cart, totalQty, subtotal, deliveryFee, grandTotal, zoneName, mode };
+  },
+
+  refreshUI() {
+    const { cart, totalQty, subtotal, deliveryFee, grandTotal } = this.getTotals();
+
+    document.getElementById("float-badge-count").textContent = totalQty;
+    document.getElementById("float-badge-total").textContent = `Rs. ${subtotal.toLocaleString()}`;
+
+    const floatPill = document.getElementById("floating-action-pill");
+    if (totalQty > 0 && AppRouter.currentRoute === "/menu") {
+      floatPill.classList.remove("hidden");
+    } else {
+      floatPill.classList.add("hidden");
+    }
+
+    const wBadge = document.getElementById("tab-waiter-badge");
+    const waBadge = document.getElementById("tab-wa-badge");
+    wBadge.textContent = totalQty;
+    waBadge.textContent = totalQty;
+    wBadge.classList.toggle("hidden", totalQty === 0);
+    waBadge.classList.toggle("hidden", totalQty === 0);
+
+    WaiterModule.renderWaiterCard(cart, totalQty, subtotal);
+
+    const waContainer = document.getElementById("wa-cart-summary");
+    if (cart.length === 0) {
+      waContainer.innerHTML = `
+        <div class="py-6 text-center space-y-2">
+          <p class="text-xs font-bold text-slate-500">No dishes selected yet.</p>
+          <button type="button" onclick="AppRouter.navigate('/menu')" class="touch-target px-4 py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs">Browse Menu</button>
+        </div>
+      `;
+    } else {
+      waContainer.innerHTML = cart.map((item) => `
+        <div class="pt-2.5 first:pt-0 flex items-center justify-between gap-2">
+          <div class="min-w-0">
+            <h4 class="font-extrabold text-xs text-slate-900 truncate">${Utils.escape(item.name)}</h4>
+            <p class="text-[11px] text-slate-500">${Utils.escape(item.portionLabel)} • Rs. ${item.unitPrice.toLocaleString()}</p>
+          </div>
+          <div class="flex items-center gap-1.5 shrink-0">
+            <button type="button" onclick="CartController.changeQty('${item.cartKey}', -1)" class="w-8 h-8 rounded-lg bg-slate-100 font-extrabold text-xs">-</button>
+            <span class="w-5 text-center font-extrabold text-xs">${item.qty}</span>
+            <button type="button" onclick="CartController.changeQty('${item.cartKey}', 1)" class="w-8 h-8 rounded-lg bg-emerald-600 text-white font-extrabold text-xs">+</button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    document.getElementById("wa-sub-amount").textContent = `Rs. ${subtotal.toLocaleString()}`;
+    document.getElementById("wa-del-amount").textContent = `Rs. ${deliveryFee.toLocaleString()}`;
+    document.getElementById("wa-total-amount").textContent = `Rs. ${grandTotal.toLocaleString()}`;
+  },
+
+  quickWhatsAppSingle(dishId, portion) {
+    const d = BANNU_MENU_DATA.find((x) => x.id === dishId);
+    if (!d) return;
+    const price = portion === "Full" ? d.fullPrice : d.singlePrice;
+    const pLabel = portion === "Full" ? d.fullLabel : d.singleLabel;
+    const table = Store.getTable();
+    const text = [
+      `*ASSALAM-O-ALAIKUM AL-MADINA RESTAURANT BANNU TOWNSHIP*`,
+      `*Quick Mobile Order:*`,
+      `• Dish: *${d.name}* (${d.urduName})`,
+      `• Portion: *${pLabel}*`,
+      `• Price: *Rs. ${price.toLocaleString()}*`,
+      `• Table / Location: *${table}*`
+    ].join("\n");
+    window.open(`https://wa.me/${APP_CONFIG.whatsappIntl}?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+  },
+
+  attachGPS(btn) {
+    if (!navigator.geolocation) {
+      Toast.fire({ icon: "error", title: "GPS not supported on this device" });
+      return;
+    }
+    const old = btn.innerHTML;
+    btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Pinning...`;
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        btn.innerHTML = old;
+        const link = `https://maps.google.com/?q=${pos.coords.latitude.toFixed(5)},${pos.coords.longitude.toFixed(5)}`;
+        const addr = document.getElementById("wa-address");
+        addr.value = (addr.value ? addr.value + " | " : "") + `GPS: ${link}`;
+        Toast.fire({ icon: "success", title: "GPS coordinates added!" });
+      },
+      () => {
+        btn.innerHTML = old;
+        Toast.fire({ icon: "warning", title: "Could not fetch GPS. Please type your Bannu address." });
+      },
+      { timeout: 7000 }
+    );
+  },
+
+  sendWhatsAppOrder() {
+    const { cart, subtotal, deliveryFee, grandTotal, zoneName, mode } = this.getTotals();
+    if (cart.length === 0) {
+      Toast.fire({ icon: "warning", title: "Please select dishes from the menu first!" });
+      AppRouter.navigate("/menu");
+      return;
+    }
+
+    const name = document.getElementById("wa-cust-name").value.trim();
+    const phone = document.getElementById("wa-cust-phone").value.trim();
+    const address = document.getElementById("wa-address").value.trim();
+    const spice = document.getElementById("wa-spice-select").value;
+    const payment = document.getElementById("wa-payment-select").value;
+    const waiterNote = document.getElementById("waiter-quick-note").value.trim();
+    const orderId = "ALM-" + Math.floor(100 + Math.random() * 900);
+
+    const orders = Store.getOrders();
+    orders.unshift({
+      orderId,
+      location: mode.includes("Dine-In") ? Store.getTable() : zoneName,
+      items: cart.map((i) => `${i.qty}x ${i.name} (${i.portion})`).join(", "),
+      total: grandTotal
+    });
+    Store.saveOrders(orders);
+    TablesController.initOrRefresh();
+
+    const msg = [
+      `*ASSALAM-O-ALAIKUM AL-MADINA RESTAURANT BANNU TOWNSHIP*`,
+      `*Order ID: #${orderId}*`,
+      `----------------------------------`,
+      `*Order Mode:* ${mode}`,
+      `*Customer:* ${name}`,
+      `*Phone:* ${phone}`,
+      `*Area / Table:* ${zoneName} (${Store.getTable()})`,
+      `*Address:* ${address}`,
+      `*Spice Pref:* ${spice}`,
+      `*Payment:* ${payment}`,
+      waiterNote ? `*Special Note:* ${waiterNote}` : null,
+      `----------------------------------`,
+      `*SELECTED DISHES:*`,
+      ...cart.map((i, idx) => `${idx + 1}. *${i.qty}x ${i.name}* (${i.portionLabel}) — Rs. ${(i.unitPrice * i.qty).toLocaleString()}`),
+      `----------------------------------`,
+      `Subtotal: Rs. ${subtotal.toLocaleString()}`,
+      deliveryFee > 0 ? `Delivery Fee: Rs. ${deliveryFee.toLocaleString()}` : null,
+      `*TOTAL PAYABLE: PKR ${grandTotal.toLocaleString()}*`,
+      `----------------------------------`,
+      `Ordered via Al-Madina Bannu QR Mobile App`
+    ].filter(Boolean).join("\n");
+
+    window.open(`https://wa.me/${APP_CONFIG.whatsappIntl}?text=${encodeURIComponent(msg)}`, "_blank", "noopener,noreferrer");
+    Toast.fire({ icon: "success", title: "Opening WhatsApp Order..." });
+  },
+
+  openPrintableSlip() {
+    const { cart, grandTotal } = this.getTotals();
+    if (cart.length === 0) {
+      Toast.fire({ icon: "warning", title: "Select dishes first to preview slip" });
+      return;
+    }
+    const table = Store.getTable();
+    const note = document.getElementById("waiter-quick-note").value.trim();
+    document.getElementById("printable-body").innerHTML = `
+      <div class="text-[11px] border-b border-dashed border-slate-300 pb-2">
+        <div class="flex justify-between"><span>Table / Location:</span><strong>${Utils.escape(table)}</strong></div>
+        <div class="flex justify-between"><span>Date:</span><span>${new Date().toLocaleString()}</span></div>
+      </div>
+      <div class="space-y-1 py-2 border-b border-dashed border-slate-300 text-[11px]">
+        ${cart.map((i) => `
+          <div class="flex justify-between">
+            <span>${i.qty}x ${Utils.escape(i.name)} (${Utils.escape(i.portion)})</span>
+            <strong>Rs.${(i.unitPrice * i.qty).toLocaleString()}</strong>
+          </div>
+        `).join("")}
+      </div>
+      ${note ? `<p class="text-[10px]"><strong>Note:</strong> ${Utils.escape(note)}</p>` : ""}
+      <div class="flex justify-between font-extrabold text-sm pt-1">
+        <span>TOTAL BILL:</span>
+        <span>PKR ${grandTotal.toLocaleString()}</span>
+      </div>
+    `;
+    document.getElementById("print-modal").classList.remove("hidden");
+  }
+};
+
+const WaiterModule = {
+  brightMode: false,
+
+  init() {
+    const savedTable = Store.getTable();
+    this.syncTableUI(savedTable);
+  },
+
+  setTable(val) {
+    Store.saveTable(val);
+    this.syncTableUI(val);
+    Toast.fire({ icon: "success", title: `Location set to ${val}` });
+  },
+
+  syncTableUI(val) {
+    document.getElementById("active-table-badge").textContent = val;
+    document.getElementById("waiter-table-heading").textContent = val;
+    $("#waiter-table-select").val(val).trigger("change.select2");
+  },
+
+  promptTableNumber() {
+    AppRouter.navigate("/waiter");
+    setTimeout(() => {
+      $("#waiter-table-select").select2("open");
+    }, 180);
+  },
+
+  toggleHighContrast() {
+    this.brightMode = !this.brightMode;
+    document.getElementById("waiter-pad-card").classList.toggle("waiter-bright-mode", this.brightMode);
+    Toast.fire({
+      icon: "info",
+      title: this.brightMode ? "Extra-Bright Waiter Display ON" : "Standard Display Restored"
+    });
+  },
+
+  appendTag(tagText) {
+    const input = document.getElementById("waiter-quick-note");
+    input.value = input.value ? `${input.value}, ${tagText}` : tagText;
+    Toast.fire({ icon: "success", title: `Added "${tagText}"` });
+  },
+
+  renderWaiterCard(cart, totalQty, subtotal) {
+    const listEl = document.getElementById("waiter-items-list");
+    document.getElementById("waiter-grand-total").textContent = `Rs. ${subtotal.toLocaleString()}`;
+    document.getElementById("waiter-total-count").textContent = `${totalQty} Dishes`;
+
+    if (cart.length === 0) {
+      listEl.innerHTML = `
+        <div class="py-8 text-center space-y-2.5">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-700 mx-auto flex items-center justify-center text-2xl">
+            <i class="fa-solid fa-bell-concierge"></i>
+          </div>
+          <p class="font-extrabold text-sm text-slate-800">Your Waiter Order Card is Empty</p>
+          <p class="text-xs text-slate-500">Select dishes from the menu, then show this screen to your waiter.</p>
+          <button type="button" onclick="AppRouter.navigate('/menu')" class="touch-target px-4 py-2 rounded-xl bg-emerald-700 text-white font-bold text-xs">
+            Select Dishes from Menu
+          </button>
+        </div>
+      `;
+      return;
+    }
+
+    listEl.innerHTML = cart.map((item) => `
+      <div class="pt-3 first:pt-0 flex items-center justify-between gap-2">
+        <div class="space-y-0.5 min-w-0">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-lg bg-emerald-700 text-white font-extrabold text-sm shrink-0">${item.qty} ×</span>
+            <h4 class="font-extrabold text-sm sm:text-base text-slate-950 leading-snug">${Utils.escape(item.name)}</h4>
+          </div>
+          <p class="urdu-text text-sm font-bold text-emerald-800 pl-1">${Utils.escape(item.urduName)}</p>
+          <p class="text-xs font-extrabold text-amber-700 pl-1">
+            Portion: ${Utils.escape(item.portionLabel)} — Rs. ${(item.unitPrice * item.qty).toLocaleString()}
+          </p>
+        </div>
+        <div class="flex items-center gap-1 shrink-0">
+          <button type="button" onclick="CartController.changeQty('${item.cartKey}', -1)" class="touch-target w-9 h-9 rounded-xl bg-slate-100 font-extrabold text-sm">-</button>
+          <button type="button" onclick="CartController.changeQty('${item.cartKey}', 1)" class="touch-target w-9 h-9 rounded-xl bg-emerald-600 text-white font-extrabold text-sm">+</button>
+        </div>
+      </div>
+    `).join("");
+  },
+
+  markShownToWaiter() {
+    const { cart, subtotal } = CartController.getTotals();
+    if (cart.length === 0) {
+      Toast.fire({ icon: "warning", title: "Select dishes first!" });
+      return;
+    }
+    const orderId = "TBL-" + Math.floor(100 + Math.random() * 900);
+    const orders = Store.getOrders();
+    orders.unshift({
+      orderId,
+      location: Store.getTable(),
+      items: cart.map((i) => `${i.qty}x ${i.name} (${i.portion})`).join(", "),
+      total: subtotal
+    });
+    Store.saveOrders(orders);
+    TablesController.initOrRefresh();
+    Swal.fire({
+      icon: "success",
+      title: `Order #${orderId} Logged for ${Store.getTable()}`,
+      text: "Waiter order recorded! You can also send a backup copy to WhatsApp 0336-1593533 if needed.",
+      confirmButtonColor: "#059669"
+    });
+  }
+};
+
+const TablesController = {
+  initOrRefresh() {
+    const rateTbody = document.getElementById("rate-list-tbody");
+    rateTbody.innerHTML = BANNU_MENU_DATA.map((d) => `
+      <tr>
+        <td>
+          <div class="font-extrabold text-slate-900">${Utils.escape(d.name)}</div>
+          <div class="urdu-text text-[11px] text-emerald-700">${Utils.escape(d.urduName)}</div>
+        </td>
+        <td class="font-bold">Rs. ${d.singlePrice.toLocaleString()}</td>
+        <td class="font-extrabold text-emerald-700">Rs. ${d.fullPrice.toLocaleString()}</td>
+        <td>${Utils.escape(d.category)}</td>
+        <td>
+          <button type="button" onclick="CartController.addItem('${d.id}', 'Single', 1)" class="px-2.5 py-1.5 rounded-lg bg-emerald-600 text-white font-bold text-xs">+ Add</button>
+        </td>
+      </tr>
+    `).join("");
+
+    const ordersTbody = document.getElementById("recent-orders-tbody");
+    ordersTbody.innerHTML = Store.getOrders().map((o) => `
+      <tr>
+        <td class="font-mono font-bold">${Utils.escape(o.orderId)}</td>
+        <td class="font-bold">${Utils.escape(o.location)}</td>
+        <td class="max-w-[160px] truncate" title="${Utils.escape(o.items)}">${Utils.escape(o.items)}</td>
+        <td class="font-extrabold text-emerald-700">Rs. ${Number(o.total).toLocaleString()}</td>
+        <td>
+          <button type="button" onclick="TablesController.sendOrderToWA('${Utils.escape(o.orderId)}')" class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </td>
+      </tr>
+    `).join("");
+
+    ["rate-list-datatable", "recent-orders-datatable"].forEach((id) => {
+      if ($.fn.DataTable.isDataTable("#" + id)) {
+        $("#" + id).DataTable().destroy();
+      }
+      $("#" + id).DataTable({
+        responsive: true,
+        pageLength: 5,
+        lengthChange: false,
+        dom: '<"flex flex-wrap items-center justify-between gap-1 mb-2"Bf>rt<"flex items-center justify-between mt-2 text-xs"ip>',
+        buttons: [
+          { extend: "pdfHtml5", text: '<i class="fa-solid fa-file-pdf text-rose-600"></i>', title: "Al-Madina Restaurant Bannu Rate List" },
+          { extend: "excelHtml5", text: '<i class="fa-solid fa-file-excel text-emerald-600"></i>', title: "Al-Madina Restaurant Bannu Rate List" },
+          { extend: "csvHtml5", text: '<i class="fa-solid fa-file-csv text-sky-600"></i>', title: "Al-Madina Restaurant Bannu Rate List" },
+          { extend: "print", text: '<i class="fa-solid fa-print text-slate-700"></i>', title: "Al-Madina Restaurant Bannu Township" },
+          { extend: "colvis", text: '<i class="fa-solid fa-table-columns text-indigo-600"></i>' }
+        ]
+      });
+    });
+  },
+
+  sendOrderToWA(orderId) {
+    const o = Store.getOrders().find((x) => x.orderId === orderId);
+    if (!o) return;
+    const msg = `*AL-MADINA RESTAURANT BANNU*\nOrder: *#${o.orderId}*\nLocation: *${o.location}*\nDishes: ${o.items}\nTotal: *PKR ${Number(o.total).toLocaleString()}*`;
+    window.open(`https://wa.me/${APP_CONFIG.whatsappIntl}?text=${encodeURIComponent(msg)}`, "_blank", "noopener,noreferrer");
+  }
+};
+
+const QRModule = {
+  init() {
+    const baseUrl = window.location.href.split("?")[0].split("#")[0];
+    document.getElementById("qr-custom-url").value = baseUrl;
+    this.renderQR();
+  },
+
+  getTargetUrl() {
+    const base = (document.getElementById("qr-custom-url").value || window.location.href).trim();
+    const tbl = document.getElementById("qr-table-tag").value;
+    if (!tbl) return base;
+    const sep = base.includes("?") ? "&" : "?";
+    return `${base}${sep}table=${encodeURIComponent(tbl)}`;
+  },
+
+  renderQR() {
+    const box = document.getElementById("inline-qrcode-box");
+    if (!box || typeof QRCode === "undefined") return;
+    box.innerHTML = "";
+    const finalUrl = this.getTargetUrl();
+    const tbl = document.getElementById("qr-table-tag").value;
+    document.getElementById("qr-caption-label").textContent = tbl
+      ? `${tbl} • Scan to Order • 0336-1593533`
+      : "Scan with Mobile Camera • WhatsApp: 0336-1593533";
+    new QRCode(box, {
+      text: finalUrl,
+      width: 170,
+      height: 170,
+      colorDark: "#064e3b",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  },
+
+  openQRModal() {
+    AppRouter.navigate("/settings");
+  },
+
+  printQRStandee() {
+    const tbl = document.getElementById("qr-table-tag").value || "All Tables / Dine-In & Delivery";
+    const qrImg = document.querySelector("#inline-qrcode-box img") || document.querySelector("#inline-qrcode-box canvas");
+    const imgSrc = qrImg ? (qrImg.src || qrImg.toDataURL()) : "";
+    document.getElementById("printable-body").innerHTML = `
+      <div class="text-center space-y-2 py-2">
+        <p class="font-extrabold text-xs uppercase">SCAN FOR DIGITAL MOBILE MENU</p>
+        ${imgSrc ? `<img src="${imgSrc}" alt="QR Code" class="w-40 h-40 mx-auto border p-2 rounded-xl">` : ""}
+        <p class="font-extrabold text-sm">${Utils.escape(tbl)}</p>
+        <p class="text-[10px]">1. Scan QR with Camera • 2. Select Dishes • 3. Show to Waiter or Order on WhatsApp 0336-1593533</p>
+      </div>
+    `;
+    document.getElementById("print-modal").classList.remove("hidden");
+  }
+};
+
+const ThemeController = {
+  defaults: {
+    fontFamily: "'Plus Jakarta Sans', sans-serif",
+    fontSize: "15px",
+    headerBg: "#064e3b",
+    headerText: "#ffffff",
+    mainBg: "#f1f5f9",
+    navBg: "#ffffff"
+  },
+
+  init() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(APP_CONFIG.storageKeys.theme)) || this.defaults;
+      this.apply(saved);
+    } catch (e) {
+      this.apply(this.defaults);
+    }
+  },
+
+  apply(t) {
+    document.getElementById("dynamic-theme-vars").innerHTML = `
+      :root {
+        --font-family: ${t.fontFamily || this.defaults.fontFamily};
+        --font-size-base: ${t.fontSize || this.defaults.fontSize};
+        --header-bg: ${t.headerBg || this.defaults.headerBg};
+        --header-text: ${t.headerText || this.defaults.headerText};
+        --sidebar-bg: ${t.navBg || this.defaults.navBg};
+        --sidebar-text: #0f172a;
+        --main-bg: ${t.mainBg || this.defaults.mainBg};
+        --main-text: #0f172a;
+        --footer-bg: #0f172a;
+        --footer-text: #f8fafc;
+      }
+    `;
+    $("#ui-font-family").val(t.fontFamily || this.defaults.fontFamily).trigger("change.select2");
+    $("#ui-font-size").val(t.fontSize || this.defaults.fontSize).trigger("change.select2");
+    document.getElementById("ui-header-bg").value = t.headerBg || this.defaults.headerBg;
+    document.getElementById("ui-header-text").value = t.headerText || this.defaults.headerText;
+    document.getElementById("ui-main-bg").value = t.mainBg || this.defaults.mainBg;
+    document.getElementById("ui-nav-bg").value = t.navBg || this.defaults.navBg;
+  },
+
+  applyPreset(name) {
+    if (name === "emerald") {
+      this.saveAndApply({ ...this.defaults, headerBg: "#064e3b", mainBg: "#f1f5f9" });
+    } else if (name === "tandoori") {
+      this.saveAndApply({ ...this.defaults, headerBg: "#7c2d12", mainBg: "#fffbeb" });
+    } else if (name === "midnight") {
+      this.saveAndApply({ ...this.defaults, headerBg: "#0f172a", mainBg: "#e2e8f0" });
+    }
+  },
+
+  saveFromForm(e) {
+    e.preventDefault();
+    this.saveAndApply({
+      fontFamily: document.getElementById("ui-font-family").value,
+      fontSize: document.getElementById("ui-font-size").value,
+      headerBg: document.getElementById("ui-header-bg").value,
+      headerText: document.getElementById("ui-header-text").value,
+      mainBg: document.getElementById("ui-main-bg").value,
+      navBg: document.getElementById("ui-nav-bg").value
+    });
+  },
+
+  saveAndApply(prefs) {
+    localStorage.setItem(APP_CONFIG.storageKeys.theme, JSON.stringify(prefs));
+    this.apply(prefs);
+    Toast.fire({ icon: "success", title: "Theme updated!" });
+  },
+
+  reset() {
+    localStorage.removeItem(APP_CONFIG.storageKeys.theme);
+    this.apply(this.defaults);
+    Toast.fire({ icon: "info", title: "Default theme restored" });
+  }
+};
+
+const PWAModule = {
+  deferredPrompt: null,
+
+  init() {
+    const icon192 = this.generateIcon(192);
+    const icon512 = this.generateIcon(512);
+    document.getElementById("apple-touch-icon-link").href = icon192;
+
+    const manifestObj = {
+      name: "Al-Madina Restaurant Bannu Township Menu",
+      short_name: "Al-Madina Menu",
+      description: "Digital QR Menu, Waiter Order Card & WhatsApp Ordering for Al-Madina Restaurant Bannu Township",
+      start_url: window.location.href,
+      display: "standalone",
+      background_color: "#064e3b",
+      theme_color: "#064e3b",
+      orientation: "portrait",
+      icons: [
+        { src: icon192, sizes: "192x192", type: "image/png", purpose: "any maskable" },
+        { src: icon512, sizes: "512x512", type: "image/png", purpose: "any maskable" }
+      ]
+    };
+
+    const manifestBlob = new Blob([JSON.stringify(manifestObj)], { type: "application/manifest+json" });
+    document.getElementById("pwa-manifest-link").href = URL.createObjectURL(manifestBlob);
+
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      this.deferredPrompt = e;
+    });
+
+    if ("serviceWorker" in navigator && (window.location.protocol === "https:" || window.location.hostname === "localhost")) {
+      const swCode = `
+        self.addEventListener('install', (e) => self.skipWaiting());
+        self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()));
+        self.addEventListener('fetch', (e) => {});
+      `;
+      const swBlob = new Blob([swCode], { type: "application/javascript" });
+      navigator.serviceWorker.register(URL.createObjectURL(swBlob)).catch(() => {});
+    }
+  },
+
+  generateIcon(size) {
+    const c = document.createElement("canvas");
+    c.width = size;
+    c.height = size;
+    const ctx = c.getContext("2d");
+    ctx.fillStyle = "#064e3b";
+    ctx.fillRect(0, 0, size, size);
+    ctx.fillStyle = "#fbbf24";
+    ctx.beginPath();
+    ctx.arc(size / 2, size / 2, size * 0.38, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = "#064e3b";
+    ctx.font = `900 ${Math.round(size * 0.28)}px sans-serif`;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("AM", size / 2, size / 2);
+    return c.toDataURL("image/png");
+  },
+
+  triggerInstall() {
+    if (this.deferredPrompt) {
+      this.deferredPrompt.prompt();
+      this.deferredPrompt.userChoice.then(() => {
+        this.deferredPrompt = null;
+      });
+    } else {
+      Swal.fire({
+        title: "Install Al-Madina Menu App",
+        html: `
+          <div class="text-left text-xs space-y-2 text-slate-700">
+            <p><strong>On Android (Chrome):</strong> Tap the browser menu <strong>(⋮)</strong> and select <strong>"Add to Home screen"</strong> or <strong>"Install app"</strong>.</p>
+            <p><strong>On iPhone (Safari):</strong> Tap the <strong>Share</strong> icon at the bottom and select <strong>"Add to Home Screen"</strong>.</p>
+            <p class="text-emerald-700 font-bold pt-1">Once installed, you can open the Bannu menu anytime with 1 tap!</p>
+          </div>
+        `,
+        icon: "info",
+        confirmButtonColor: "#059669",
+        confirmButtonText: "Got It!"
+      });
+    }
+  }
+};
+
+const AppRouter = {
+  currentRoute: "/menu",
+  map: {
+    "/menu": "view-menu",
+    "/waiter": "view-waiter",
+    "/whatsapp": "view-whatsapp",
+    "/rates": "view-rates",
+    "/settings": "view-settings"
+  },
+
+  init() {
+    window.addEventListener("popstate", (e) => {
+      const r = e.state && e.state.route ? e.state.route : "/menu";
+      this.show(r, false);
+    });
+    this.show("/menu", false);
+  },
+
+  navigate(route) {
+    const target = this.map[route] ? route : "/menu";
+    try {
+      window.history.pushState({ route: target }, "", "#" + target.replace("/", ""));
+    } catch (e) {}
+    this.show(target, true);
+  },
+
+  show(route, scroll) {
+    this.currentRoute = this.map[route] ? route : "/menu";
+    const sectionId = this.map[this.currentRoute];
+
+    document.querySelectorAll(".route-view").forEach((el) => {
+      el.classList.toggle("hidden", el.id !== sectionId);
+    });
+
+    document.querySelectorAll(".tab-btn").forEach((btn) => {
+      const isCurrent = btn.getAttribute("data-route") === this.currentRoute;
+      if (isCurrent) {
+        btn.classList.add("bg-emerald-700", "text-white", "shadow-xs");
+        btn.classList.remove("text-slate-500");
+      } else {
+        btn.classList.remove("bg-emerald-700", "text-white", "shadow-xs");
+        btn.classList.add("text-slate-500");
+      }
+    });
+
+    CartController.refreshUI();
+
+    if (this.currentRoute === "/rates") {
+      setTimeout(() => {
+        ["rate-list-datatable", "recent-orders-datatable"].forEach((id) => {
+          if ($.fn.DataTable.isDataTable("#" + id)) {
+            $("#" + id).DataTable().columns.adjust().responsive.recalc();
+          }
+        });
+      }, 60);
+    }
+
+    if (scroll) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
+};
+
+function initSelect2Dropdowns() {
+  $("select").each(function () {
+    const $s = $(this);
+    if (!$s.hasClass("select2-hidden-accessible")) {
+      $s.select2({ width: "100%", minimumResultsForSearch: 6 });
+    }
+  });
+}
+
+function initValidation() {
+  const validator = new JustValidate("#whatsappOrderForm", {
+    validateBeforeSubmitting: true
+  });
+  validator
+    .addField("#wa-cust-name", [
+      { rule: "required", errorMessage: "Please enter your name" },
+      { rule: "minLength", value: 2, errorMessage: "Name is too short" }
+    ])
+    .addField("#wa-cust-phone", [
+      { rule: "required", errorMessage: "Mobile number is required" },
+      { rule: "minLength", value: 10, errorMessage: "Enter valid phone (e.g. 03361593533)" }
+    ])
+    .addField("#wa-address", [
+      { rule: "required", errorMessage: "Please enter Bannu Township address or Table No" },
+      { rule: "minLength", value: 4, errorMessage: "Please provide street/house or table details" }
+    ])
+    .onSuccess((e) => {
+      e.preventDefault();
+      CartController.sendWhatsAppOrder();
+    });
+}
+
+function initHideOnScrollNav() {
+  let prevScroll = window.scrollY;
+  const bar = document.getElementById("bottom-tab-bar");
+  window.addEventListener("scroll", () => {
+    const curr = window.scrollY;
+    if (curr > prevScroll && curr > 90) {
+      bar.classList.add("nav-hidden-mobile");
+    } else {
+      bar.classList.remove("nav-hidden-mobile");
+    }
+    prevScroll = curr;
+  }, { passive: true });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  Store.init();
+  initSelect2Dropdowns();
+  PWAModule.init();
+  ThemeController.init();
+  WaiterModule.init();
+  MenuController.init();
+  CartController.refreshUI();
+  TablesController.initOrRefresh();
+  QRModule.init();
+  initValidation();
+  initHideOnScrollNav();
+  AppRouter.init();
+});
+</script>
+</body>
+</html>
